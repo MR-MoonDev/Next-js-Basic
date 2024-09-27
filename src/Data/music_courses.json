@@ -1,0 +1,55 @@
+{
+    "Courses":[
+        {
+          "id": 1,
+          "title": "JavaScript for Beginners",
+          "slug": "javascript-for-beginners",
+          "description": "An introductory course to JavaScript, covering the basics of programming in the browser.",
+          "price": 49.99,
+          "instruction": "Learn the fundamentals of JavaScript step-by-step with practical examples and exercises.",
+          "isFeature": true,
+          "image": "javascript-beginners.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Advanced React Development",
+          "slug": "advanced-react-development",
+          "description": "Take your React skills to the next level with this deep dive into hooks, state management, and advanced patterns.",
+          "price": 79.99,
+          "instruction": "Master React development by building complex applications and using modern techniques.",
+          "isFeature": false,
+          "image": "advanced-react.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Python for Data Science",
+          "slug": "python-for-data-science",
+          "description": "Learn Python and its libraries to analyze and visualize data. Perfect for aspiring data scientists.",
+          "price": 59.99,
+          "instruction": "Gain hands-on experience in Python programming and data analysis through real-world projects.",
+          "isFeature": true,
+          "image": "python-data-science.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Web Development Bootcamp",
+          "slug": "web-development-bootcamp",
+          "description": "A comprehensive bootcamp covering HTML, CSS, JavaScript, and more to get you started as a web developer.",
+          "price": 99.99,
+          "instruction": "Follow along with expert instructors to build websites from scratch and become a proficient web developer.",
+          "isFeature": true,
+          "image": "web-dev-bootcamp.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Introduction to Machine Learning",
+          "slug": "intro-to-machine-learning",
+          "description": "A beginner-friendly course that teaches the fundamentals of machine learning using Python.",
+          "price": 89.99,
+          "instruction": "Discover the core concepts of machine learning and build predictive models using real datasets.",
+          "isFeature": false,
+          "image": "machine-learning.jpg"
+        }
+      ]
+      
+}
