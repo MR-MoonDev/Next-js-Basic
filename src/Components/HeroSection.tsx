@@ -23,11 +23,11 @@ const HeroSection = () => {
           journey today. Whether your a beginner or looking to refine your
           Skills ,join us to unlock your true potential.
         </p>
-        <div className="mt-4 ">
+        <div className="mt-12 ">
           <Link href={"/courses"}>
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              className=" bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               Explore Courses
             </Button>
