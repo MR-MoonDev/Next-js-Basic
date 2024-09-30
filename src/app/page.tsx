@@ -1,6 +1,7 @@
 import Chossen from "@/Components/Chossen";
 import Feature from "@/Components/Feature";
 import HeroSection from "@/Components/HeroSection";
+import TestCard from "@/Components/TestCard";
 
 export default function Home(){
   return(
@@ -8,6 +9,7 @@ export default function Home(){
       <HeroSection/>
       <Feature/>
       <Chossen/>
+      <TestCard/>
      </main>
   )
 }
