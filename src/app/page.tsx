@@ -2,6 +2,7 @@ import Chossen from "@/Components/Chossen";
 import Feature from "@/Components/Feature";
 import HeroSection from "@/Components/HeroSection";
 import TestCard from "@/Components/TestCard";
+import UpcomingCard from "@/Components/UpcomingCard";
 
 export default function Home(){
   return(
@@ -10,6 +11,7 @@ export default function Home(){
       <Feature/>
       <Chossen/>
       <TestCard/>
+      <UpcomingCard/>
      </main>
   )
 }

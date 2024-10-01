@@ -27,7 +27,7 @@ const quotes= [
   
 function TestCard() {
   return (
-    <div className='h-[40rem] w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col  overflow-hidden'>
+    <div className=' justify-center  h-[40rem] w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col  overflow-hidden'>
       <h2 className="text-4xl md:text-4xl font-bold bg-clip-text text-center text-transparent bg-gradient-to-b my-10 from-neutral-50 to-neutral-400">Here our harmoney: voices of Success</h2>
       <div className='flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8'>
         <div className='w-full max-w-6xl'>
