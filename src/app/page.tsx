@@ -1,3 +1,4 @@
+import AnimatedTooltipPreview from "@/Components/AnimatedTooltipPreview";
 import Chossen from "@/Components/Chossen";
 import Feature from "@/Components/Feature";
 import HeroSection from "@/Components/HeroSection";
@@ -12,6 +13,7 @@ export default function Home(){
       <Chossen/>
       <TestCard/>
       <UpcomingCard/>
+      <AnimatedTooltipPreview/>
      </main>
   )
 }
