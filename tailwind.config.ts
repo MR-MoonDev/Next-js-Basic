@@ -1,10 +1,8 @@
 import type { Config } from "tailwindcss";
-const color = require ("tailwindcss/colors");
+const color = require("tailwindcss/colors");
 const svgToDataUri = require("mini-svg-data-uri");
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
-const {
-  default : flattenColorPalette,
-}=require("tailwindcss/lib/util/flattenColorPalette");
 function addVariablesForColors({ addBase, theme }: any) {
   const allColors = flattenColorPalette(theme('colors'));
   const newVars = Object.fromEntries(
@@ -15,6 +13,7 @@ function addVariablesForColors({ addBase, theme }: any) {
     ':root': newVars,
   });
 }
+
 function addSvgPatterns({ matchUtilities, theme }: any) {
   matchUtilities(
     {
@@ -37,6 +36,7 @@ function addSvgPatterns({ matchUtilities, theme }: any) {
     { values: flattenColorPalette(theme('backgroundColor')), type: 'color' }
   );
 }
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -44,12 +44,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   
-  darkMode:'class',
+  darkMode: 'class',
   theme: {
     extend: {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
-        scroll:"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "meteor-effect": "meteor 5s linear infinite", // Added meteor effect
       },
       keyframes: {
         scroll: {
@@ -67,6 +68,14 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        meteor: { // Added keyframes for meteor effect
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
       },
       colors: {
         background: "var(--background)",
@@ -74,6 +83,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors,addSvgPatterns],
+  plugins: [addVariablesForColors, addSvgPatterns],
 };
+
 export default config;

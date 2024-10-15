@@ -8,7 +8,7 @@
           "price": 49.99,
           "instruction": "Learn the fundamentals of JavaScript step-by-step with practical examples and exercises.",
           "isFeature": true,
-          "image": "javascript-beginners.jpg"
+          "image": "/courses/javascript-beginners.jpg"
         },
         {
           "id": 2,
@@ -18,7 +18,7 @@
           "price": 79.99,
           "instruction": "Master React development by building complex applications and using modern techniques.",
           "isFeature": false,
-          "image": "advanced-react.jpg"
+          "image": "/courses/advanced-react.jpg"
         },
         {
           "id": 3,
@@ -28,7 +28,7 @@
           "price": 59.99,
           "instruction": "Gain hands-on experience in Python programming and data analysis through real-world projects.",
           "isFeature": true,
-          "image": "python-data-science.jpg"
+          "image": "/courses/python-data-science.jpg"
         },
         {
           "id": 4,
@@ -38,7 +38,7 @@
           "price": 99.99,
           "instruction": "Follow along with expert instructors to build websites from scratch and become a proficient web developer.",
           "isFeature": true,
-          "image": "web-dev-bootcamp.jpg"
+          "image": "/courses/web-dev-bootcamp.jpg"
         },
         {
           "id": 5,
@@ -48,7 +48,7 @@
           "price": 89.99,
           "instruction": "Discover the core concepts of machine learning and build predictive models using real datasets.",
           "isFeature": false,
-          "image": "machine-learning.jpg"
+          "image": "/courses/machine-learning.jpg"
         }
       ]
       
